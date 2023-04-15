@@ -1,0 +1,30 @@
+.input_task{
+    width: 350px;
+    height: 40px;
+    border: 1px solid #d5c8c8;
+    border-radius: 4px;
+    margin: 25px;
+    padding-left: 14px;
+}
+
+.add{
+    width: 170px;
+    height: 40px;
+    color: #fff;
+    background-color: black;
+    margin-top: 24px;
+}
+
+label {
+    display: flex;
+  }
+  
+  .list {
+    display: grid;
+    gap: 26px;
+    padding: 32px 0 32px 0;
+  }
+  
+  .list_block {
+    display: none;
+  }

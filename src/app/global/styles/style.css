@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #443f3f;
+    background-color: #efdddd;
+}
+
+.container{
+    display: flex;
+    border-bottom: 1px solid #e8dbdb;
+}
+
+h1{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    color: #000;
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+button{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    font-family: "Inter", sans-serif;
+    border: none;
+    border-radius: 4px;
+
+}

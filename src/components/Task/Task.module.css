@@ -1,0 +1,27 @@
+.box_task {
+    background-color: white;
+   display: flex;
+   align-items: center;
+}
+
+.box_task_done{
+text-decoration: line-through;
+opacity: 0.5;
+}
+
+.cross {
+    margin-right: 24px;
+    margin-left: auto;
+    background-color: white;
+    size: 16px;
+}
+
+.img {
+pointer-events: none;
+display: block;
+}
+
+.check {
+    margin: 0 16px 0px 24px;
+    accent-color: #7749F8;
+}
