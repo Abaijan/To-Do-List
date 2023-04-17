@@ -2,7 +2,7 @@ import React from 'react'
 import s from './Form.module.css'
 import Task from '../Task/Task'
 
-const Form = ({addTask, setValue, todo, value, deleteTask, doneTask}) => {
+const Form = ({addTask, setValue, todo, value, deleteTask, doneTask, setImportant}) => {
   return (
     <>
         <div className={s.container}>
@@ -29,6 +29,8 @@ const Form = ({addTask, setValue, todo, value, deleteTask, doneTask}) => {
             deleteTask={deleteTask}
             doneTask={doneTask}
             isDone={el.isDone}
+            isImportant={el.isImportant}
+            setImportant={setImportant}
             />
            ))}
         </ul>

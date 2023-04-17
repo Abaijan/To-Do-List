@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import Form from './components/Form/Form';
 import Wrapper from './components/Wrapper/Wrapper';
 import DeleteBlock from './components/DeleteBlock/DeleteBlock';
@@ -16,14 +16,15 @@ function App() {
   }, [todo])
 
 
-  function addTask(){
-    if(value.length) {
+  function addTask() {
+    if (value.length) {
       let newArr = [
         ...todo,
         {
           id: new Date().toISOString(),
           text: value,
           isDone: false,
+          isImportant: false,
         }
       ];
       setTodo(newArr);
@@ -42,10 +43,10 @@ function App() {
   const doneTask = (id) => {
     setTodo(
       todo.map((el) => {
-        if(el.id === id){
+        if (el.id === id) {
           el.isDone = !el.isDone;
           return el;
-        }else{
+        } else {
           return el;
         }
       })
@@ -57,18 +58,21 @@ function App() {
     setTodo([]);
   }
 
-  
+
   return (
     <Wrapper>
-      <Form 
+      <Form
         addTask={addTask}
         setValue={setValue}
         value={value}
         todo={todo}
         deleteTask={deleteTask}
         doneTask={doneTask}
-       />
-      <DeleteBlock deleteAll={deleteAll} delComplited={delComplited}/>
+        // setImportant={setImportant}
+
+      />
+
+      <DeleteBlock deleteAll={deleteAll} delComplited={delComplited} />
     </Wrapper>
   );
 }

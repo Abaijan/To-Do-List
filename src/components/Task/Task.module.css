@@ -9,6 +9,12 @@ text-decoration: line-through;
 opacity: 0.5;
 }
 
+.box_task_important{
+    background-color: #fff;
+    border: none;
+
+}
+
 .cross {
     margin-right: 24px;
     margin-left: auto;
@@ -21,7 +27,18 @@ pointer-events: none;
 display: block;
 }
 
+.red {
+    background: rgb(212, 33, 33);
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
 .check {
     margin: 0 16px 0px 24px;
     accent-color: #7749F8;
+}
+.important{
+    background-color: white;
+    border: none;
 }
