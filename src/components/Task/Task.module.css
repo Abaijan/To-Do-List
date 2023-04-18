@@ -12,7 +12,7 @@ opacity: 0.5;
 .box_task_important{
     background-color: #fff;
     border: none;
-
+   
 }
 
 .cross {
@@ -25,9 +25,12 @@ opacity: 0.5;
 .cross1{
     margin-right: 24px;
     margin-left: auto;
-    background-color: rgb(19, 238, 128);
+    background-color: rgb(19, 238, 128) ;
+   transition: 3s;
+
     size: 16px;
     border: none;
+
 
 }
 
@@ -43,6 +46,8 @@ display: block;
     color: #fff;
     font-size: 16px;
     color: black;
+   transition: 3s;
+
 }
 
 .check {
@@ -55,6 +60,7 @@ display: block;
 }
 .important_btn1{
     background-color: rgb(19, 238, 128);
+   transition: 3s;
     border: none;
 }
 .checked {
